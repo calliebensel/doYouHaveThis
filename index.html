@@ -7,12 +7,43 @@
   </head>
   <body>
     <h2>Inventory Example</h2>
+    <div>
+    <h3>Add Item to Inventory</h3>
+      <input id="nameIn" type = "text" placeholder="New Item">
     <select id='sizeIn'>
-      <option>SIZEOPTION</option>
+      <option value = "small">Small</option>
+      <option value = "medium">Medium</option>
+      <option value = "large">Large</option>
     </select>
     <select id='colorIn'>
-      <option>COLOROPTION</option>
+      <option value = "red">Red</option>
+      <option value = "orange">Orange</option>
+      <option value = "yellow">Yellow</option>
+      <option value = "green">Green</option>
+      <option value = "blue">Blue</option>
+      <option value = "mermaid treasure">Mermaid Treasure</option>
+      <option value = "purple">Purple</option>
     </select>
-    <button onclick="searchInventory()">Search Inventory</button>
+    <button onclick="getUserInput()">Add Item</button>
+  </div>
+  <div>
+    <h3>Search</h3>
+  <select id='selectedSize'>
+    <option value = "small">Small</option>
+    <option value = "medium">Medium</option>
+    <option value = "large">Large</option>
+  </select>
+  <select id='selectedColor'>
+    <option value = "red">Red</option>
+    <option value = "orange">Orange</option>
+    <option value = "yellow">Yellow</option>
+    <option value = "green">Green</option>
+    <option value = "blue">Blue</option>
+    <option value = "mermaid treasure">Mermaid Treasure</option>
+    <option value = "purple">Purple</option>
+  </select>
+  <button onclick="searchInventory()">Search Inventory</button>
+  <p id="outputP"></p>
+</div>
   </body>
 </html>

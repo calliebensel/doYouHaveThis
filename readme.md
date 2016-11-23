@@ -22,9 +22,9 @@ Basic Features:
 Your challenge:
 ---------------
 Recreate the above project as was made in class. If time allows, try to incorporate the following:
-* new item input from user input (stored in inventory array. Searchable)
-* search by name
-* add some styling
+* [] new item input from user input (stored in inventory array. Searchable)
+* [] search by name
+* [] add some styling
 
 Make sure to push your work to Github when complete!
 

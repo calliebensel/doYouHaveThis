@@ -1,4 +1,4 @@
-console.log( 'inventory.js sourced' );
+//console.log( 'inventory.js sourced' );
 // global inventory
 var inventory=[];
 
@@ -14,9 +14,14 @@ var addItem = function( color, name, size ){
   inventory.push( newItem );
   // show updated inventory
   console.log( 'currentInventory:', inventory );
-} // end addItem
-
-var searchInventory = function(){
+}; // end addItem
+var getUserInput = function(){
+  var newColor = document.getElementById( 'colorIn' ).value;
+  var newName = document.getElementById( 'nameIn' ).value;
+  var newSize = document.getElementById( 'sizeIn' ).value;
+  addItem(newColor, newName, newSize);
+};
+var searchInventory = function(newColor, newSize){
   console.log( 'in searchInventory' );
   // get size from user
   var selectedSize = document.getElementById( 'sizeIn' ).value;
@@ -32,10 +37,10 @@ var searchInventory = function(){
     if( inventory[ i ].color == selectedColor && inventory[ i ].size == selectedSize ){
       results.push( inventory[ i ] );
     }
-  }; // end for
+  } // end for
   console.log( results.length + ' matches found' );
   console.log( results );
-} // end searchInventory
+}; // end searchInventory
 
 ///////// ADD ITEMS /////////
 addItem( 'blue', 'Smurf', 'Small');
